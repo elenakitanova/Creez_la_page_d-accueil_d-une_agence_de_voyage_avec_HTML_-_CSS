@@ -14,13 +14,24 @@ h1, h2, h3, h4 {
 	color: black;
 }
 
-h1 {
-    font-size: 22px;
+h1 h2 h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding: 0;
     margin: 0;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 .p {
@@ -32,90 +43,31 @@ h1 {
     margin: 0;
 }
 
-.search-and-filters {
+.main-container {
+    width: 100%;
     max-width: 1440px;
-    margin: 0;
-    padding: 0px;
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
-.search-bar {
+.main {
     display: flex;
-    align-items: center;
-    width: 377px;
-    height: 49px;
-    gap: 24px;
-    border-radius: 15px;
-    border: 1px solid var(--Grey, #F2F2F2);
-    background: var(--White, #FFF);
-    margin-bottom: 35px;
+    flex-direction: column;
+    gap: 35px;
 }
 
-.search-icon i {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    color: black;
-    width: 50px;
-    height: 49px;
-    border-radius: 15px 0px 0px 15px;
-    background-color: var(--Grey, #F2F2F2);
-}
 
-.search-bar input {
-    flex: 1;
-    text-align: center;
-    vertical-align: middle;
-    border: none; 
-    outline: none;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: black !important;
-    height: 49px;
-    padding: 0px;
-}
-.search-bar input::placeholder {
-    color: black !important; /* S'assurer que le placeholder a une couleur noire */
-}
-
-.search-bar .search-btn {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 16px;
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    border-radius: 0px 15px 15px 0px;
-    cursor: pointer;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 49px;
-}
-
-.fa-solid {
-    color: var(--main-color);
-}
-
-body {
-    display: flex;
-    justify-content: center;
-}
 /*HEADER*/
 .header {
 	position: relative;
 	width: 100%;
     max-width: 1440px;
     height: 79px;
-    padding: 0;
-    margin: 0 0 30 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0px 0px 30px 0px;
+    padding: 0;
     
 }
 
@@ -155,22 +107,141 @@ body {
 }
 
 .search-and-filters {
-
-
+    max-width: 1440px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
+
 
 .search-header {
-    margin-bottom: 35px;
     line-height: 8px;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 377px;
+    height: 49px;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid var(--Grey, #F2F2F2);
+    background: var(--White, #FFF);
+    margin: 0px;
+    padding: 0px;
 }
+
+.search-icon i {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: var(--Grey, #F2F2F2);
+}
+
+.search-bar input {
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    border: none; 
+    outline: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black !important;
+    height: 49px;
+    padding: 0px;
+}
+
+.search-bar input::placeholder {
+    color: black !important; /* S'assurer que le placeholder a une couleur noire */
+}
+
+.search-bar .search-btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 16px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 49px;
+    margin: 0;
+}
+
+.filters {
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 15px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .filters-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 15px; 
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    padding: 4px 19px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid var(--Grey-Tint2, #D9D9D9);
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--Black, #000);
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .button:hover {
+    background: var(--Blue-Light, #DEEBFF); 
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
 
 a {
     color: inherit;
@@ -209,6 +280,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hebergements-and-populaires section {
