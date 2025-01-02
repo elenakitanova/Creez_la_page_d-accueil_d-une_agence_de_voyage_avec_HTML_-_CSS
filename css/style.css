@@ -53,7 +53,6 @@ h3 {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 35px;
 }
 
 
@@ -111,14 +110,19 @@ h3 {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    margin: 0 0 35px 0;
+    padding: 0%;
 }
 
 
 .search-header {
-    line-height: 8px;
-    margin: 0px;
+   
+    margin: 0 0 35px 0;
     padding: 0px;
+}
+
+.search-header p {
+    margin-top: -10px; 
 }
 
 .search-bar {
@@ -130,7 +134,7 @@ h3 {
     border-radius: 15px;
     border: 1px solid var(--Grey, #F2F2F2);
     background: var(--White, #FFF);
-    margin: 0px;
+    margin: 0 0 35px 0;
     padding: 0px;
 }
 
@@ -188,9 +192,9 @@ h3 {
     justify-content: flex-start;
     align-items: center; 
     gap: 15px;
-    margin: 0px;
+    margin: 0 0 35px 0; 
     padding: 0px;
-  }
+}
   
   .filters-button {
     display: flex;
@@ -280,6 +284,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 
 }
 
@@ -293,7 +298,86 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex; 
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hebergements-cards-rangee {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    box-sizing: border-box;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.hebergements-cards-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Assure que les paddings et marges sont inclus dans la largeur */
+    margin-top: 33px;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.hebergements-cards img {
+    width: 235px;
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+    margin: 0;
+}
+
+.hebergements-card-txt {
+   padding: 0;
+   margin: 0 0 0 15px;
+}
+
+.hebergements h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.hebergements-cards .card-rating {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.afficher-plus {
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 15px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
