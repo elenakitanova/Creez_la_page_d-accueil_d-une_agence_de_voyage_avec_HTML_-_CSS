@@ -698,7 +698,7 @@ figure {
         padding-bottom: 20px;
     }
     .nav a {
-        padding-bottom: 5px; /* Un peu de padding pour éviter que la ligne se superpose au texte */
+        padding-bottom: 5px; /* padding pour éviter que la ligne se superpose au texte */
         transition: color 0.3s ease, border-bottom 0.3s ease;
         padding-bottom: 10px;
         width: 100%;
@@ -707,7 +707,7 @@ figure {
         touch-action: manipulation;
     }
     .nav li:hover {
-        border-bottom: 2px solid var(--main-color); /* Ajouter la ligne bleue en bas */
+        border-bottom: 2px solid var(--main-color);
     }
     .nav a:hover {   
         border-top: 0px;
