@@ -85,6 +85,7 @@ justify-content: center;
 
 .nav ul {
     display: flex;
+    margin: 22px;
     flex-direction: row;
     list-style: none; 
     margin: 0 0 50;
@@ -578,7 +579,6 @@ figure {
         display: none;
     }
     .filters {
-        width: 100%;
         gap: 08px;
         margin-bottom: 15px;
     }
@@ -606,9 +606,6 @@ figure {
         padding: 0;
     }
 
-    .hebergements {
-        width: 100%;
-    }
     #hebergements .card{
         height: 200px;
     }
@@ -687,9 +684,18 @@ figure {
         margin-top: 50px;
         padding: 35px;
         }  
+        .nav {  
+            width: 100%;
+        }  
     .nav ul {
-        margin: 0 ;
-        gap : 100px;
+        margin: 0;
+        width: 100%;
+        gap: 0;
+    }
+    .nav li {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
     }
     .nav a {
         padding-bottom: 5px; /* Un peu de padding pour éviter que la ligne se superpose au texte */
@@ -697,12 +703,14 @@ figure {
         padding-bottom: 10px;
         width: 100%;
     }
-    .nav a:active, .nav a:focus {
+    .nav li:active, .nav li:focus {
         touch-action: manipulation;
     }
-    .nav a:hover {
-        border-top: none;
+    .nav li:hover {
         border-bottom: 2px solid var(--main-color); /* Ajouter la ligne bleue en bas */
+    }
+    .nav a:hover {   
+        border-top: 0px;
     }
     .search-and-filters {
         margin: 0 20px 25px 20px;
